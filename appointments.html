@@ -25,17 +25,15 @@
 
     </nav>
 
-    <body>
-        <h1><u>Book an appointment</u></h1>
-        <p>Schedule your appointment with our experienced specialists with just a few minutes
-            we are here to provide quality healthcare when you need it.
-        </p>
 
-
-        <h1><u>Appointment form</u></h1>
-
-
-        <form>
+    <h1><u>Book an appointment</u></h1>
+    <p>Schedule your appointment with our experienced specialists with just a few minutes
+        we are here to provide quality healthcare when you need it.
+    </p>
+    <h1><u>Appointment form</u></h1>
+    <p>Fill the form below and our team will contact you</p>
+    <form id="appointmentForm">
+        <div class="appointment-container">
             <label>Full Name</label>
             <input name="full name"><br>
             <label>Email</label>
@@ -43,34 +41,37 @@
             <label>Phone Number</label>
             <input name="phone number"><br>
             <label>Department</label>
-            <select id="=Department">name="Department">
-                <option value="disabled selected">Select a department</option>
+            <select id="Department" name="Department">
+                <option value="" disabled selected>Select a department</option>
+                <option value="General Medicine">General Medicine</option>
                 <option value="cardiology">Cardiology</option>
                 <option value="Pediatrics">Pediatrics</option>
                 <option value="dermatology">Dermatology</option>
                 <option value="neurology">Neurology</option>
-                <option value="pediatrics">Pediatrics</option>
+                <option value="dentistry">Dentistry</option>
                 <option value="Oncology">Oncology</option>
             </select><br>
             <label>Preferred doctor</label>
-            <select id="=Doctor">name="Doctor">
-                <option value="disabled selected">Select a doctor</option>
+            <select id="=Doctor" name="Doctor">
+                <option value="" disabled selected>Select a doctor</option>
                 <option value="Dr.Kaydan Smith">Dr.Kaydan Smith</option>
                 <option value="Dr.Zilper Otieno">Dr.Zilper Otieno</option>
                 <option value="Dr.Erlin Dreadson"> Dr.Erlin Dreadson</option>
                 <option value="Dr.Henry Burroughs">Dr.Henry Burroughs</option>
             </select>
-            <input name="preferred doctor"><br>
             <label>Date of visit</label>
             <input name="Date" type="date"><br>
             <label>Preferred time</label>
             <input name="time" type="time"><br>
             <label>Reason for visit</label>
             <input name="reason"><br>
+        </div>
+        <button type="submit">Submit form</button>
+    </form>
+    <p id="message"></p>
+    <script src="script.js"></script>
+</body>
 
-        </form>
-    </body>
-
-    <footer>"Your health,our priority"</footer>
+<footer>"Your health,our priority"</footer>
 
 </html>

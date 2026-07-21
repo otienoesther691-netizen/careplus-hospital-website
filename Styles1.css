@@ -208,3 +208,41 @@ table head {
 .doctor-info {
     text-align: center;
 }
+
+.appointment-container {
+    background-color: #f8f9fa;
+    padding: 0%;
+    box-shadow: grey;
+    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 40px;
+    height: min-content;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+button {
+    padding: 12px;
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005f8a;
+}
+
+#message {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
